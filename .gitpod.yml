@@ -1,0 +1,12 @@
+# .gitpod.yml configuration for BlazeHost
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - name: Install Dependencies
+    init: pip install -r requirements.txt
+    command: echo "Dependencies installed successfully!"
+
+  - name: Start Application
+    # Replace 'main.py' with the actual filename of your main script
+    command: python main.py
